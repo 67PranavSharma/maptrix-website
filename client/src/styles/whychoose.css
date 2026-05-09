@@ -1,0 +1,87 @@
+.whyChoose{
+  padding:120px 8%;
+  background:#050816;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+
+  align-items:center;
+}
+
+.whyLeft h1{
+  font-size:65px;
+  color:white;
+  margin-bottom:25px;
+  line-height:1.1;
+}
+
+.whyLeft p{
+  color:#d1d5db;
+  font-size:20px;
+  line-height:1.8;
+}
+
+.whyRight{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.whyCard{
+  background:rgba(255,255,255,0.05);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(12px);
+
+  border-radius:25px;
+
+  padding:35px 25px;
+
+  transition:0.4s;
+
+  color:white;
+}
+
+.whyCard:hover{
+  transform:translateY(-10px);
+
+  box-shadow:0 12px 35px rgba(0,191,255,0.2);
+}
+
+.whyIcon{
+  font-size:45px;
+  color:#00bfff;
+  margin-bottom:20px;
+}
+
+.whyCard h2{
+  margin-bottom:15px;
+  font-size:24px;
+}
+
+.whyCard p{
+  color:#d1d5db;
+  line-height:1.7;
+}
+
+@media(max-width:1000px){
+
+  .whyChoose{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:700px){
+
+  .whyLeft h1{
+    font-size:42px;
+  }
+
+  .whyRight{
+    grid-template-columns:1fr;
+  }
+
+}

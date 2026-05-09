@@ -1,0 +1,67 @@
+.whatsappBtn{
+  position:fixed;
+
+  right:20px;
+  bottom:20px;
+
+  width:55px;
+  height:55px;
+
+  border-radius:50%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:#25D366;
+
+  color:white;
+
+  font-size:28px;
+
+  z-index:999;
+
+  box-shadow:0 8px 25px rgba(37,211,102,0.4);
+
+  transition:0.3s;
+}
+
+.whatsappBtn:hover{
+  transform:scale(1.1);
+}
+
+@media(max-width:600px){
+
+  .whatsappBtn{
+    width:50px;
+    height:50px;
+
+    font-size:24px;
+
+    right:15px;
+    bottom:15px;
+  }
+
+}
+
+.whatsappBtn:hover{
+
+  transform:scale(1.1);
+
+}
+
+@keyframes whatsappFloat{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-8px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}

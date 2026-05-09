@@ -1,0 +1,209 @@
+.navbar{
+  width:100%;
+  height:80px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:0 80px;
+
+  position:fixed;
+  top:0;
+  left:0;
+
+  z-index:1000;
+
+ 
+
+  backdrop-filter:blur(12px);
+
+  background:rgba(0,0,0,0.25);
+
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.logoSection{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logoSection img{
+  width:42px;
+  height:auto;
+  object-fit:contain;
+}
+
+.logoSection h1{
+  font-size:28px;
+  color:white;
+  font-weight:700;
+}
+
+.navLinks{
+  display:flex;
+  list-style:none;
+  gap:40px;
+}
+
+.navLinks li{
+  position:relative;
+  cursor:pointer;
+  transition:0.3s;
+  color:white;
+}
+
+.navLinks li::after{
+  content:'';
+  position:absolute;
+
+  left:0;
+  bottom:-5px;
+
+  width:0%;
+  height:2px;
+
+  background:#ff7a00;
+
+  transition:0.3s;
+}
+
+.navLinks li:hover::after{
+  width:100%;
+}
+
+.navLinks li:hover{
+  color:#ff7a00;
+}
+
+.navLinks li a{
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.navLinks li a:hover{
+  color:#ff7a00;
+}
+
+.navLinks li.active a{
+  color:#ff7a00;
+}
+
+.hireBtn{
+  background:#ff7a00;
+  color:white;
+
+  padding:12px 24px;
+
+  border-radius:30px;
+
+  font-size:16px;
+
+  border:none;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.hireBtn:hover{
+  transform:translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(255,122,0,0.4);
+}
+
+.menuIcon{
+  display:none;
+
+  font-size:26px;
+
+  cursor:pointer;
+
+  color:white;
+
+  z-index:2000;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .navbar{
+    height:70px;
+    padding:0 18px;
+  }
+
+  .logoSection{
+    gap:8px;
+  }
+
+  .logoSection img{
+    width:32px;
+  }
+
+  .logoSection h1{
+    font-size:22px;
+  }
+
+  .navLinks{
+    position:fixed;
+
+    top:70px;
+    left:-100%;
+
+    width:100%;
+
+    height:calc(100vh - 70px);
+
+    background:#081120;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:32px;
+
+    transition:0.35s ease;
+
+    z-index:1500;
+  }
+
+  .navLinks li a{
+    font-size:20px;
+  }
+
+  .navLinks.active{
+    left:0;
+  }
+
+  .menuIcon{
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-size:24px;
+
+    color:white;
+
+    z-index:2000;
+  }
+
+  .hireBtn{
+    display:none;
+  }
+
+}
+
+.activeNavbar{
+  background:rgba(5,8,22,0.85);
+
+  backdrop-filter:blur(18px);
+
+  box-shadow:
+    0 5px 25px rgba(0,0,0,0.3);
+}
