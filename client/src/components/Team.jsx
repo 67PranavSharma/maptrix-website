@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 import { FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 import team1 from '../assets/team1.jpg'
-import team2 from '../assets/team2new.jpg'
-import team3 from '../assets/team3new.jpg'
+import team2 from '../assets/teamnew2.jpg'
+import team3 from '../assets/teamnew3.jpg'
 
 const teamMembers = [
 
